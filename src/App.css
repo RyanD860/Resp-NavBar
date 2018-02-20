@@ -1,0 +1,148 @@
+header {
+  background-image: url("./header-bg.jpg");
+  background-size: cover;
+  height: 729px;
+}
+
+@media only screen and (max-width: 765px) and (min-width: 355px) {
+  .resp-head {
+    height: 54vh;
+    background-position: center;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 30px;
+    color: #fed136;
+  }
+  label {
+    display: inline-block;
+    margin-right: 70px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #fed136;
+    height: 35px;
+    width: 70px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  #toggle {
+    display: none;
+  }
+
+  #nav-bar {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+    position: absolute;
+  }
+  #toggle:checked + #nav-bar {
+    display: block;
+    color: white;
+    background: #212529;
+    width: 100%;
+    margin-top: 130px;
+  }
+  nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .landing-text {
+    padding-top: 45px;
+    text-align: center;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+  }
+
+  .landing-text h1 {
+    font-size: 46px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .landing-text h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  button {
+    border-radius: 5px;
+    height: 70px;
+    width: 200px;
+    background: #fed136;
+    font-size: 16px;
+    font-weight: 700px;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  .resp-head {
+    height: 100vh;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+  }
+  .logo {
+    color: yellow;
+    display: inline-block;
+    margin-left: 40px;
+  }
+  #nav-bar {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  nav {
+    color: white;
+    padding-right: 20px;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  .landing-text {
+    padding-top: 225px;
+    text-align: center;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+  }
+
+  .landing-text h1 {
+    font-size: 75px;
+  }
+  .landing-text h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  button {
+    border-radius: 5px;
+    height: 70px;
+    width: 200px;
+    background: #fed136;
+    font-size: 16px;
+    font-weight: 700px;
+    color: white;
+  }
+  #toggle,
+  label {
+    display: none;
+  }
+}
